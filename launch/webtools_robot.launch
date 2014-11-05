@@ -1,7 +1,7 @@
 <launch>
 	<!--<node 	name="throttle_ped_image"
 		pkg="topic_tools" type="throttle" 
-		args="messages /pedestrian_tracking/image 0.3 /webthrottle/people/image" />
+		args="messages /mdl_people_tracker/image 0.3 /webthrottle/people/image" />
 -->
 	<node 	name="throttle_image"
 		pkg="topic_tools" type="throttle" 

@@ -1,3 +1,24 @@
+## strands_webtools (indigo) - 0.0.2-0
+
+The packages in the `strands_webtools` repository were released into the `indigo` distro by running `/usr/bin/bloom-release strands_webtools -t indigo -r indigo` on `Wed, 17 Dec 2014 16:17:01 -0000`
+
+The `strands_webtools` package was released.
+
+Version of package(s) in repository `strands_webtools`:
+- upstream repository: https://github.com/strands-project/strands_webtools.git
+- release repository: https://github.com/strands-project-releases/strands_webtools.git
+- rosdistro version: `0.0.1-0`
+- old version: `0.0.1-0`
+- new version: `0.0.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.14`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.10.33`
+- rosdistro version: `0.3.6`
+- vcstools version: `0.1.35`
+
+
 ## strands_webtools (hydro) - 0.0.2-0
 
 The packages in the `strands_webtools` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -r hydro -t hydro strands_webtools` on `Wed, 05 Nov 2014 13:53:26 -0000`

@@ -17,47 +17,12 @@ add_subdirectory (apache)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS robot_pose_publisher rosbridge_library rosbridge_server)
 
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
-
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/groovy/api/catkin/html/user_guide/setup_dot_py.html
 # catkin_python_setup()
 
-#######################################
-## Declare ROS messages and services ##
-#######################################
-
-## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
-
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
-
-## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
-
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
-## Declare things to be passed to dependent projects
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES strands_webtools
@@ -65,30 +30,6 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-###########
-## Build ##
-###########
-
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-# include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
-
-## Declare a cpp library
-# add_library(strands_webtools
-#   src/${PROJECT_NAME}/strands_webtools.cpp
-# )
-
-## Declare a cpp executable
-# add_executable(strands_webtools_node src/strands_webtools_node.cpp)
-
-## Add cmake target dependencies of the executable/library
-## as an example, message headers may need to be generated before nodes
-# add_dependencies(strands_webtools_node strands_webtools_generate_messages_cpp)
-
-## Specify libraries to link a library or executable target against
-# target_link_libraries(strands_webtools_node
-#   ${catkin_LIBRARIES}
-# )
 
 #############
 ## Install ##
@@ -99,10 +40,10 @@ catkin_package(
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# install(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+install(PROGRAMS
+  scripts/webserver.sh
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS strands_webtools strands_webtools_node
@@ -111,12 +52,41 @@ catkin_package(
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-## Mark cpp header files for installation
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
+
+install(DIRECTORY roslibjs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/roslibjs
+)
+
+install(DIRECTORY ros3djs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/ros3djs
+)
+install(DIRECTORY ros2djs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/ros2djs
+)
+install(DIRECTORY nav2djs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/nav2djs
+)
+install(DIRECTORY mjpegcanvasjs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/mjpegcanvasjs
+)
+install(DIRECTORY keyboardteleopjs/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/keyboardteleopjs
+)
+
+install(DIRECTORY js/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/js
+)
+install(DIRECTORY css/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/css
+)
+
+
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)
+
+
+
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES

@@ -2,6 +2,14 @@
 Changelog for package strands_webtools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.2 (2014-11-05)
+------------------
+* merged `#62 <https://github.com/strands-project/strands_webtools/issues/62>`_
+* Merge pull request `#60 <https://github.com/strands-project/strands_webtools/issues/60>`_ from cdondrup/hydro-devel
+  strands_pedestrian_tracking has been renamed to mdl_people_tracker
+* strands_pedestrian_tracking has been renamed to mdl_people_tracker
+* Contributors: Christian Dondrup, Marc Hanheide
+
 0.0.1 (2014-08-27)
 ------------------
 * moved webserver.sh

@@ -2,6 +2,11 @@
 Changelog for package strands_webtools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.0 (2017-06-29)
+------------------
+* changed mjpeg_server to web_video_server
+* Contributors: Marc Hanheide
+
 0.0.2 (2014-11-05)
 ------------------
 * merged `#62 <https://github.com/strands-project/strands_webtools/issues/62>`_
@@ -52,11 +57,11 @@ Changelog for package strands_webtools
   * removed outdated files
   * added generation of html pages according to cmake settings
 * Merge branch 'marathon' of github.com:strands-project/strands_webtools into marathon
-* added mjpeg_server params
+* added web_video_server params
 * Update README.md
 * Merge branch 'marathon' of github.com:strands-project/strands_webtools into marathon
 * Merge branch 'marathon' of github.com:marc-hanheide/strands_webtools into marathon
-* included safe mjpeg_server and adjusted topic
+* included safe web_video_server and adjusted topic
 * corrected typo
 * Merge pull request `#48 <https://github.com/strands-project/strands_webtools/issues/48>`_ from marc-hanheide/marathon
   Marathon as currently testing on http://lcas.lincoln.ac.uk/linda/marathon.html
@@ -116,7 +121,7 @@ Changelog for package strands_webtools
 * stream-lined installation procedure with apache using cmake target "apache" and a new script
 * now uses the proxied connection (all through port 80)
 * change mjpeg port to not interfere with other services
-* added mjpeg_server as dependency
+* added web_video_server as dependency
 * added missing css images
 * fixed link
 * added links

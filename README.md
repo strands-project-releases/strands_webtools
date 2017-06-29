@@ -14,7 +14,7 @@ An interface to access the real and/or simulated robot via web applications. It 
 ```
 rosdep -y install -r strands_webtools
 ```
-* ROS requirements from source (e.g. OS X): rosbridge_suite, rosauth, tf2_web_republisher, mjpeg_server, robot_pose_publisher
+* ROS requirements from source (e.g. OS X): rosbridge_suite, rosauth, tf2_web_republisher, web_video_server, robot_pose_publisher
 
 
 
@@ -53,7 +53,7 @@ echo -e "# Depends: proxy\nLoadModule proxy_wstunnel_module /usr/lib/apache2/mod
   * Afterwards, run:  `sudo a2enmod proxy* rewrite*`
       
 ## ROS setup
-The marathon branch requires STRAND's own version of rosbridge_suite and mjpeg_server to added security features. Here's the rosinstall config:
+The marathon branch requires STRAND's own version of rosbridge_suite and web_video_server to added security features. Here's the rosinstall config:
 ```
 - git: 
    local-name: rosbridge_suite
@@ -61,8 +61,8 @@ The marathon branch requires STRAND's own version of rosbridge_suite and mjpeg_s
    version: readonly_capabilities
    
 - git: 
-   local-name: mjpeg_server
-   uri: 'https://github.com/strands-project/mjpeg_server.git'
+   local-name: web_video_server
+   uri: 'https://github.com/strands-project/web_video_server.git'
    version: groovy-devel
 ```
 
@@ -97,7 +97,7 @@ The setup is as follows:
 	Options -Indexes
 	
 	
-	# serving mjpeg image streams under this URL. This needs to match the URL given in the HTML file. the mjpeg_server is running locally on port 8181 (as specified in the launch file)
+	# serving mjpeg image streams under this URL. This needs to match the URL given in the HTML file. the web_video_server is running locally on port 8181 (as specified in the launch file)
 	RewriteRule ^/linda/video http://localhost:8181/ [P]
 	
   # reverse proxy for rosbridge (rosbridge is running locally on port 9090 (as specified in the launch file)

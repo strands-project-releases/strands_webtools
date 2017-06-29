@@ -1,7 +1,7 @@
 mjpegcanvasjs [![Build Status](https://api.travis-ci.org/WPI-RAIL/mjpegcanvasjs.png)](https://travis-ci.org/WPI-RAIL/mjpegcanvasjs)
 =============
 
-#### Display a MJPEG stream from the ROS mjpeg_server Inside of a HTML5 Canvas
+#### Display a MJPEG stream from the ROS web_video_server Inside of a HTML5 Canvas
 For full documentation, see [the ROS wiki](http://ros.org/wiki/mjpegcanvasjs) or check out some [working demos](http://robotwebtools.org/).
 
 [JSDoc](http://robotwebtools.org/jsdoc/mjpegcanvasjs/current/) can be found on the Robot Web Tools website.

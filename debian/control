@@ -1,0 +1,12 @@
+Source: ros-kinetic-strands-webtools
+Section: misc
+Priority: extra
+Maintainer: Lars Kunze <l.kunze@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-robot-pose-publisher, ros-kinetic-rosapi, ros-kinetic-rosauth, ros-kinetic-rosbridge-library, ros-kinetic-rosbridge-server, ros-kinetic-scitos-description, ros-kinetic-tf2-web-republisher, ros-kinetic-web-video-server
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-strands-webtools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-robot-pose-publisher, ros-kinetic-rosapi, ros-kinetic-rosauth, ros-kinetic-rosbridge-library, ros-kinetic-rosbridge-server, ros-kinetic-scitos-description, ros-kinetic-tf2-web-republisher, ros-kinetic-web-video-server
+Description: Remote control our robots via a browser

@@ -1,3 +1,26 @@
+## strands_webtools (kinetic) - 0.1.0-0
+
+The packages in the `strands_webtools` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -n -t kinetic -r kinetic strands_webtools` on `Thu, 29 Jun 2017 09:16:46 -0000`
+
+The `strands_webtools` package was released.
+
+Version of package(s) in repository `strands_webtools`:
+
+- upstream repository: https://github.com/strands-project/strands_webtools.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## strands_webtools (indigo) - 0.0.2-0
 
 The packages in the `strands_webtools` repository were released into the `indigo` distro by running `/usr/bin/bloom-release strands_webtools -t indigo -r indigo` on `Wed, 17 Dec 2014 16:17:01 -0000`

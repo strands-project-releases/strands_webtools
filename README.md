@@ -1,3 +1,26 @@
+## strands_webtools (melodic) - 0.1.0-1
+
+The packages in the `strands_webtools` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -n -t melodic -r melodic strands_webtools` on `Tue, 19 Nov 2019 10:22:02 -0000`
+
+The `strands_webtools` package was released.
+
+Version of package(s) in repository `strands_webtools`:
+
+- upstream repository: https://github.com/strands-project/strands_webtools.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.17.1`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## strands_webtools (kinetic) - 0.1.0-0
 
 The packages in the `strands_webtools` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -n -t kinetic -r kinetic strands_webtools` on `Thu, 29 Jun 2017 09:16:46 -0000`

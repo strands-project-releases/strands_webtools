@@ -1,0 +1,12 @@
+Source: ros-melodic-strands-webtools
+Section: misc
+Priority: optional
+Maintainer: Lars Kunze <l.kunze@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-robot-pose-publisher, ros-melodic-rosapi, ros-melodic-rosauth, ros-melodic-rosbridge-library, ros-melodic-rosbridge-server, ros-melodic-scitos-description, ros-melodic-tf2-web-republisher, ros-melodic-web-video-server
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-strands-webtools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-robot-pose-publisher, ros-melodic-rosapi, ros-melodic-rosauth, ros-melodic-rosbridge-library, ros-melodic-rosbridge-server, ros-melodic-scitos-description, ros-melodic-tf2-web-republisher, ros-melodic-web-video-server
+Description: Remote control our robots via a browser
